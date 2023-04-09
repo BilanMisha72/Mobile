@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        int a = 200; //остаток
-        int b = 1300; //платеж
+        int remains = 200; //остаток
+        int payment = 1300;
         int percent = 0;
-        if (b > 1000) {
+        if (payment > 1000) {
             percent = 1;
         }
-        int bonus = (b / 100) * percent;
+        int bonus = (payment / 100) * percent;
 
-        int c = (a + b + bonus);
-        System.out.println(c);
+        int balance = (remains + payment + bonus);
+        System.out.println(balance);
     }
 }
 
